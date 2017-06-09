@@ -50,4 +50,5 @@ fi
 echo $args
 
 cd dqn
-../torch/bin/qlua train_2agent.lua $args
+PREFIX=$HOME/Softwares/torch
+$PREFIX/bin/qlua train_2agent.lua $args

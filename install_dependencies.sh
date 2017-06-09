@@ -8,7 +8,7 @@
 TOPDIR=$PWD
 
 # Prefix:
-PREFIX=$PWD/torch
+PREFIX=$HOME/Softwares/torch
 echo "Installing Torch into: $PREFIX"
 
 if [[ `uname` != 'Linux' ]]; then
@@ -20,21 +20,21 @@ if [[ `which apt-get` == '' ]]; then
     exit
 fi
 
-# Install dependencies for Torch:
-sudo apt-get update
-sudo apt-get install -qqy build-essential
-sudo apt-get install -qqy gcc g++
-sudo apt-get install -qqy cmake
-sudo apt-get install -qqy curl
-sudo apt-get install -qqy libreadline-dev
-sudo apt-get install -qqy git-core
-sudo apt-get install -qqy libjpeg-dev
-sudo apt-get install -qqy libpng-dev
-sudo apt-get install -qqy ncurses-dev
-sudo apt-get install -qqy imagemagick
-sudo apt-get install -qqy unzip
-sudo apt-get install -qqy libqt4-dev
-sudo apt-get update
+# # Install dependencies for Torch:
+# sudo apt-get update
+# sudo apt-get install -qqy build-essential
+# sudo apt-get install -qqy gcc g++
+# sudo apt-get install -qqy cmake
+# sudo apt-get install -qqy curl
+# sudo apt-get install -qqy libreadline-dev
+# sudo apt-get install -qqy git-core
+# sudo apt-get install -qqy libjpeg-dev
+# sudo apt-get install -qqy libpng-dev
+# sudo apt-get install -qqy ncurses-dev
+# sudo apt-get install -qqy imagemagick
+# sudo apt-get install -qqy unzip
+# sudo apt-get install -qqy libqt4-dev
+# sudo apt-get update
 
 
 echo "==> Torch7's dependencies have been installed"
